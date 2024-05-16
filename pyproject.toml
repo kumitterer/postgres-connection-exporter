@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "postgres-connection-exporter"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Kumi Mitterer", email="postgres-connection-exporter@kumi.email" },
 ]
