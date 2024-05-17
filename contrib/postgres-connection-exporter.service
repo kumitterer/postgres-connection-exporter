@@ -1,0 +1,13 @@
+[Unit]
+Description=Postgres Connection Exporter
+After=network.target
+
+[Service]
+User=postgres-connection-exporter
+Group=postgres-connection-exporter
+ExecStart=/srv/postgres-connection-exporter/bin/postgres-connection-exporter
+Restart=always
+WorkingDirectory=/srv/postgres-connection-exporter
+
+[Install]
+WantedBy=multi-user.target
